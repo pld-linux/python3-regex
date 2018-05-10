@@ -5,18 +5,16 @@
 %bcond_without	python2 # CPython 2.x module
 %bcond_without	python3 # CPython 3.x module
 
-%define 	module	regex
+%define		module	regex
 Summary:	Alternative regular expression module, to replace re
 Summary(pl.UTF-8):	Alternatywny modułu wyrażeń regularnych w stosunku do oryginalnego re
-%define 	egg_version	2017.9.23
 Name:		python-%{module}
-Version:	2017.09.23
-Release:	0.1
+Version:	2018.02.21
+Release:	1
 License:	PSF
 Group:		Libraries/Python
-# Source0:	https://pypi.python.org/packages/source/r/%{module}/%{module}-%{version}.tar.gz
-Source0:	https://pypi.python.org/packages/d7/65/91b43adad1dc45d7374521422270490128a2f289e1c3e1036b231b521507/%{module}-%{version}.tar.gz
-# Source0-md5:	ae36c1d6901826f705bb9d23316bbc61
+Source0:	https://files.pythonhosted.org/packages/source/r/%{module}/%{module}-%{version}.tar.gz
+# Source0-md5:	81c128915267f59738b2ac5757b8a460
 URL:		https://bitbucket.org/mrabarnett/mrab-regex
 BuildRequires:	rpm-pythonprov
 # for the py_build, py_install macros
@@ -101,7 +99,7 @@ rm -rf $RPM_BUILD_ROOT
 %{py_sitedir}/%{module}.py[co]
 %{py_sitedir}/test_%{module}.py[co]
 %attr(755,root,root) %{py_sitedir}/_%{module}.so
-%{py_sitedir}/%{module}-%{egg_version}-py*.egg-info
+%{py_sitedir}/%{module}-*-py*.egg-info
 %endif
 
 %if %{with python3}
@@ -113,7 +111,7 @@ rm -rf $RPM_BUILD_ROOT
 %{py3_sitedir}/_%{module}_core.py
 %%attr(755,root,root) %{py3_sitedir}/_%{module}.*.so
 %{py3_sitedir}/__pycache__/*
-%{py3_sitedir}/%{module}-%{egg_version}-py*.egg-info
+%{py3_sitedir}/%{module}-*-py*.egg-info
 %endif
 
 %if %{with doc}
