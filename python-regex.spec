@@ -10,7 +10,7 @@ Summary:	Alternative regular expression module, to replace re
 Summary(pl.UTF-8):	Alternatywny modułu wyrażeń regularnych w stosunku do oryginalnego re
 Name:		python-%{module}
 Version:	2018.02.21
-Release:	1
+Release:	2
 License:	PSF
 Group:		Libraries/Python
 Source0:	https://files.pythonhosted.org/packages/source/r/%{module}/%{module}-%{version}.tar.gz
