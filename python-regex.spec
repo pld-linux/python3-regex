@@ -13,7 +13,8 @@ Version:	2018.02.21
 Release:	3
 License:	PSF
 Group:		Libraries/Python
-Source0:	https://files.pythonhosted.org/packages/source/r/%{module}/%{module}-%{version}.tar.gz
+#Source0Download: https://pypi.org/simple/regex/
+Source0:	https://files.pythonhosted.org/packages/source/r/regex/%{module}-%{version}.tar.gz
 # Source0-md5:	81c128915267f59738b2ac5757b8a460
 URL:		https://bitbucket.org/mrabarnett/mrab-regex
 BuildRequires:	rpm-pythonprov
@@ -21,15 +22,12 @@ BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
 %if %{with python2}
 BuildRequires:	python-devel
-#BuildRequires:	python-setuptools
+BuildRequires:	python-setuptools
 %endif
 %if %{with python3}
 BuildRequires:	python3-devel
-#BuildRequires:	python3-setuptools
+BuildRequires:	python3-setuptools
 %endif
-# when using /usr/bin/env or other in-place substitutions
-#BuildRequires:	sed >= 4.0
-# replace with other requires if defined in setup.py
 Requires:	python-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
