@@ -9,7 +9,7 @@ Summary:	Alternative regular expression module, to replace re
 Summary(pl.UTF-8):	Moduł wyrażeń regularnych alternatywny dla oryginalnego re
 Name:		python-%{module}
 Version:	2020.11.13
-Release:	1
+Release:	2
 License:	PSF, Apache v2.0
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/regex/
