@@ -8,13 +8,14 @@
 Summary:	Alternative regular expression module, to replace re
 Summary(pl.UTF-8):	Moduł wyrażeń regularnych alternatywny dla oryginalnego re
 Name:		python-%{module}
-Version:	2020.11.13
-Release:	3
+# keep 2021.3.x here for python2 support
+Version:	2021.3.17
+Release:	1
 License:	PSF, Apache v2.0
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/regex/
 Source0:	https://files.pythonhosted.org/packages/source/r/regex/%{module}-%{version}.tar.gz
-# Source0-md5:	4310bfc300d49224476fcd032a8ce5f7
+# Source0-md5:	c72d3bf55414ffbf92e43462ad91d508
 URL:		https://bitbucket.org/mrabarnett/mrab-regex
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
