@@ -7,7 +7,7 @@ Summary:	Alternative regular expression module, to replace re
 Summary(pl.UTF-8):	Moduł wyrażeń regularnych alternatywny dla oryginalnego re
 Name:		python3-%{module}
 Version:	2022.3.15
-Release:	2
+Release:	3
 License:	PSF, Apache v2.0
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/regex/
