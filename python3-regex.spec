@@ -6,19 +6,19 @@
 Summary:	Alternative regular expression module, to replace re
 Summary(pl.UTF-8):	Moduł wyrażeń regularnych alternatywny dla oryginalnego re
 Name:		python3-%{module}
-Version:	2022.8.17
-Release:	3
+Version:	2024.11.6
+Release:	1
 License:	PSF, Apache v2.0
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/regex/
 Source0:	https://files.pythonhosted.org/packages/source/r/regex/%{module}-%{version}.tar.gz
-# Source0-md5:	6b3c706a4d275af24f01496c10d516fa
+# Source0-md5:	02b86394591ba39d34bc35d11e9e7d96
 URL:		https://bitbucket.org/mrabarnett/mrab-regex
-BuildRequires:	python3-devel >= 1:3.6
+BuildRequires:	python3-devel >= 1:3.8
 BuildRequires:	python3-setuptools
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
-Requires:	python3-modules >= 1:3.6
+Requires:	python3-modules >= 1:3.8
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
